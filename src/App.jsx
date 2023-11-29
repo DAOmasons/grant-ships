@@ -6,6 +6,7 @@ import "./style/App.css";
 
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
+import InterestForm from  "./pages/FormPage";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <div>
         {/* Navbar */}
         <nav>
-          <ul list-style:none>
+          <ul style={{ listStyle: 'none' }}>
             <li>
               <Link to="/">
                 <img
@@ -30,6 +31,9 @@ function App() {
             <li>
               <Link to="/AboutPage">About</Link>
             </li>
+            <li>
+              <Link to="/InterestForm">Sign Up</Link>
+            </li>
           </ul>
         </nav>
 
@@ -37,6 +41,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/AboutPage" element={<AboutPage />} />
+          <Route path="/InterestForm" element={<InterestForm />} />
         </Routes>
       </div>
     </Router>
