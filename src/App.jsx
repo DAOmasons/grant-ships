@@ -1,4 +1,5 @@
-import { useState } from "react";
+/* eslint-disable react/no-unknown-property */
+// import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import grantShipsLogo from "./assets/rocket.png";
 import "./style/App.css";
@@ -22,12 +23,12 @@ function App() {
                 />
               </Link>
             </li>
-            <li class="menuHeader">Grant Ships</li>
+            <li className="menuHeader">Grant Ships</li>
             <li>
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/AboutPage">About</Link>
             </li>
           </ul>
         </nav>
@@ -35,7 +36,7 @@ function App() {
         {/* Routes */}
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
+          <Route path="/AboutPage" element={<AboutPage />} />
         </Routes>
       </div>
     </Router>
