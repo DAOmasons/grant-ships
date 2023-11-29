@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unknown-property */
 // import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import grantShipsLogo from "./assets/rocket.png";
+import grantShipsLogo from "./assets/rocketgrad3.svg";
 import "./style/App.css";
 
 import HomePage from "./pages/HomePage";

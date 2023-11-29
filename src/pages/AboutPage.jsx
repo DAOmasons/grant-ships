@@ -1,6 +1,6 @@
 // Import necessary Material UI components
 import { Typography, Card, CardContent, Grid } from '@mui/material';
-import grantShipsLogo from '../assets/rocket.png';
+import grantShipsLogo from '../assets/rocketgrad3.svg';
 import '../style/App.css';
 
 function AboutPage() {
@@ -97,6 +97,7 @@ function AboutPage() {
         </Grid>
       </Grid>
     </div>
+
   );
 }
 
