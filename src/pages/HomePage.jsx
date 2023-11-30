@@ -1,4 +1,4 @@
-import grantShipsLogo from "../assets/rocket.png";
+import grantShipsLogo from "../assets/rocketgrad3.svg";
 import "../style/App.css";
 
 function HomePage() {

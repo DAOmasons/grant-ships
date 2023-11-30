@@ -1,7 +1,7 @@
 import grantShipsLogo from "../assets/rocketgrad3.svg";
 import "../style/App.css";
 
-function AboutPage() {
+function SignUpPage() {
   return (
     <>
       <div>
@@ -12,9 +12,9 @@ function AboutPage() {
         />
       </div>
       <h1>Grant Ships</h1>
-      <div className="card">About Grant Ships</div>
+      <div className="card">Put on Your Sailing Shoes</div>
     </>
   );
 }
 
-export default AboutPage;
+export default SignUpPage;
