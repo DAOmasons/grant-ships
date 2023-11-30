@@ -12,7 +12,9 @@ function HomePage() {
         />
       </div>
       <h1>Grant Ships</h1>
-      <div className="card">Hello Grant Ships</div>
+      <h2 className="card">
+        An Evolutionary Grant Distribution Game in the Arbitrum Ecosystem
+      </h2>
     </>
   );
 }
