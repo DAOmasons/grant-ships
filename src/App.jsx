@@ -5,7 +5,11 @@ import grantShipsLogo from "./assets/rocketgrad3.svg";
 import "./style/App.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter, faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faTwitter,
+  faGithub,
+  faDiscord,
+} from "@fortawesome/free-brands-svg-icons";
 
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
@@ -68,6 +72,15 @@ function App() {
                   rel="noopener noreferrer"
                 >
                   <FontAwesomeIcon icon={faGithub} />
+                </a>
+              </li>
+              <li style={{ marginLeft: "10px" }}>
+                <a
+                  href="https://discord.gg/xuWBRkrs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faDiscord} />
                 </a>
               </li>
             </div>
