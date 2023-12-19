@@ -10,6 +10,7 @@ function HomePage() {
         <img src={grantShipsLogo} className="logo grantships" alt="Grant Ships logo" />
       </div>
       <h1>Grant Ships</h1>
+
       <p className="byline">Framework for Pluralistic Grant Giving</p> {/* Byline added here */}
 
       {/* Social Media Icons */}
