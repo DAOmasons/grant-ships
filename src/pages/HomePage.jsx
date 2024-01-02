@@ -47,9 +47,11 @@ function HomePage() {
       {/* Footer */}
       <div className="footer">
         <p>
-          © 2023 Grant Ships
+          © 2023-Present 
+        </p>
+        <p>
           <a href="https://daomasons.com" target="_blank" rel="noopener noreferrer">
-            DAO Masons
+          DAO Masons
           </a>
         </p>
       </div>
