@@ -92,3 +92,21 @@
 .footer a:hover {
   text-decoration: underline;
 }
+
+.about-section {
+  background-color: #000f21; /* Or any color that fits your design */
+  color: white;
+  padding: 2em;
+  margin-top: 2em;
+  border-radius: 8px;
+}
+
+.about-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+.about-section p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
