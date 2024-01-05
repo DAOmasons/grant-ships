@@ -2,7 +2,7 @@
 import React from "react";
 import grantShipsLogo from "../assets/rocketgrad3.svg";
 import warpcastIcon from '../assets/farcastericon.svg';
-import { FaTwitter as FaXTwitter, FaTelegram, FaDiscord } from "react-icons/fa";
+import { FaXTwitter, FaTelegram, FaDiscord } from "react-icons/fa6";
 import "../style/App.css";
 
 function HomePage() {
