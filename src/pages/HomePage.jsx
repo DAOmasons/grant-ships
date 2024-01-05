@@ -1,6 +1,7 @@
 // HomePage.jsx
 import React from "react";
 import grantShipsLogo from "../assets/rocketgrad3.svg";
+import warpcastIcon from '../assets/farcastericon.svg';
 import { FaTwitter as FaXTwitter, FaTelegram, FaDiscord } from "react-icons/fa";
 import "../style/App.css";
 
@@ -24,6 +25,9 @@ function HomePage() {
         <a href="https://discord.gg/vShYcxJEuY" target="_blank" rel="noopener noreferrer">
           <FaDiscord size={30} />
         </a>
+        <a href="https://warpcast.com/~/channel/grant-ships" target="_blank" rel="noopener noreferrer">
+          <img src={warpcastIcon} alt="Warpcast" style={{ height: '30px', width: '30px' }} />
+        </a>        
       </div>
 
       <div className="card">
