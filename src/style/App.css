@@ -103,3 +103,14 @@
 .footer a:hover {
   text-decoration: underline;
 }
+
+/* Add this to your CSS file */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Place it behind other content */
+  pointer-events: none; /* Prevent it from blocking interactions */
+}
