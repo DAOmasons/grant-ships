@@ -5,6 +5,7 @@ import warpcastIcon from '../assets/farcastericon.svg';
 import { FaXTwitter, FaTelegram, FaDiscord } from "react-icons/fa6";
 import "../style/App.css";
 import TickerTape from "./TickerTape";
+import ParticlesBackground from "./ParticlesBackground";
 
 function HomePage() {
   const messages = [
@@ -16,7 +17,8 @@ function HomePage() {
 
   return (
     <>
-    <TickerTape messages={messages} />
+      <ParticlesBackground />
+      <TickerTape messages={messages} />
       <div className="logo-container">
         <img src={grantShipsLogo} className="logo grantships" alt="Grant Ships logo" />
       </div>
