@@ -44,16 +44,25 @@
   transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   font-family: 'Roboto', sans-serif;
+  width: 150px; /* Fixed width */
+  height: 50px; /* Fixed height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
 .rulesButton:hover, .signUpButton:hover {
   background-color: #535bf2;
   transform: scale(1.05);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+
 .rulesButton:active, .signUpButton:active {
   transform: scale(0.95);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
 
 .social-media-icons {
   display: flex;
