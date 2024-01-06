@@ -1,10 +1,29 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%; /* Ensure full width */
+  background-color: #000f21;
+  background-image: linear-gradient(
+    135deg, 
+    #102a44 1%,    /* Deep space blue */
+    #1a237e 30%,   /* Dark midnight blue */
+    #283593 60%,   /* Indigo blue */
+    #003366 100%   /* Dark cerulean */
+  );
+  overflow: hidden; /* Prevents scrolling if particles extend beyond viewport */
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background-color: #000f21;
   font-family: 'Abril Fatface', serif;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
 }
 
 .logo {
@@ -78,8 +97,12 @@
   color: #646cff;
 }
 
+h1 {
+  color: whitesmoke
+}
+
 .byline {
-  color: #535bf2;
+  color: #bd5e1b;
   font-size: 1.5em;
   margin: 0.5em 0;
   font-weight: normal;
@@ -104,12 +127,3 @@
   text-decoration: underline;
 }
 
-#particles-js {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0; /* Place it behind other content */
-  pointer-events: none; /* Prevent it from blocking interactions */
-}
