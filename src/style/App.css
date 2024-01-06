@@ -8,17 +8,22 @@
 }
 
 .logo {
-  height: 20em;
+  height: 25em;
   padding: 1em;
   margin-top: 1em;
-  transition: box-shadow 0.3s ease-in-out;
+  transition: filter 300ms; /* Transition for the filter effect */
+  /* Apply a filter-based drop shadow */
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+}
+
+.logo-container {
+  margin-top: 50px; /* Added space above the logo */
 }
 
 .logo:hover {
-  transform: scale(1.05); /* Slightly larger on hover */
-  transition: transform 0.3s ease-in-out;
+  /* Adjust the drop shadow on hover */
+  filter: drop-shadow(0 0 10em #646cffaa);
 }
-
 
 .card {
   padding: 2em;

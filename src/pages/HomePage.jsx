@@ -1,14 +1,23 @@
 // HomePage.jsx
 import React from "react";
-import grantShipsLogo from "../assets/rocketgrad3.svg";
+import grantShipsLogo from "../assets/gsLogo.svg";
 import warpcastIcon from '../assets/farcastericon.svg';
 import { FaXTwitter, FaTelegram, FaDiscord } from "react-icons/fa6";
 import "../style/App.css";
+import TickerTape from "./TickerTape";
 
 function HomePage() {
+  const messages = [
+    { text: "Grant Ships now has a Warpcast Channel!", url: "https://warpcast.com/~/channel/grant-ships" },
+    { text: "Read our Dev Log!", url: "https://forum.arbitrum.foundation/t/grant-ships-weekly-dev-log/20191?u=boiler" },
+    { text: "Hover to Pause - Blue are Clickable" },
+    { text: "Grant Ships is Looking for Ship Operators", url: "https://forms.grantships.fun" },
+  ];
+
   return (
     <>
-      <div>
+    <TickerTape messages={messages} />
+      <div className="logo-container">
         <img src={grantShipsLogo} className="logo grantships" alt="Grant Ships logo" />
       </div>
       <h1>Grant Ships</h1>
