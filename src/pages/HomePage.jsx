@@ -38,6 +38,9 @@ function HomePage() {
         <a href="https://rules.grantships.fun" target="_blank" rel="noopener noreferrer">
           <button className="rulesButton">Game Rules</button>
         </a>
+        <a href="https://app.grantships.fun" target="_blank" rel="noopener noreferrer">
+          <button className="appDemoButton">App Demo</button>
+        </a>
         <a href="https://forms.grantships.fun" target="_blank" rel="noopener noreferrer">
           <button className="signUpButton">Sign Up</button>
         </a>
