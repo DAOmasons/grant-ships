@@ -45,19 +45,22 @@ function HomePage() {
           <button className="signUpButton">Sign Up</button>
         </a>
       </div>
-      {/* Footer */}
-      <div className="footer">
-        <p>
-          © 2023-Present
-        </p>
+       {/* Footer */}
+       <div className="footer">
+        <hr />
+        <p>© 2023-Present</p>
         <p>
           <a href="https://daomasons.com" target="_blank" rel="noopener noreferrer">
           DAO Masons
           </a>
         </p>
+        {/* Additional Links */}
+        <a href="https://paragraph.xyz/@daomasons" target="_blank" rel="noopener noreferrer">Blog</a> |
+        <a href="https://calendly.com/daomasons/30min" target="_blank" rel="noopener noreferrer">Calendly</a> |
+        <a href="https://github.com/DAOmasons" target="_blank" rel="noopener noreferrer">Github</a> |
+        <a href="mailto:daomasons@gmail.com">Email</a>
       </div>
     </>
   );
 }
-
 export default HomePage;
