@@ -58,7 +58,9 @@ function HomePage() {
         <a href="https://paragraph.xyz/@daomasons" target="_blank" rel="noopener noreferrer">Blog</a> |
         <a href="https://calendly.com/daomasons/30min" target="_blank" rel="noopener noreferrer">Calendly</a> |
         <a href="https://github.com/DAOmasons" target="_blank" rel="noopener noreferrer">Github</a> |
-        <a href="mailto:daomasons@gmail.com">Email</a>
+        <a href="mailto:daomasons@gmail.com">Email</a> |
+        <a href="https://twitter.com/daomasons" target="blank" rel="noopener norefererrer">X</a> |
+        <a href="https://discord.gg/NDueS3juBN" target="blank" rel="noopener norefererrer">Discord</a> 
       </div>
     </>
   );
