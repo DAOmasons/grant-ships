@@ -145,7 +145,7 @@ h1 {
  }
 
  .about-section {
-  background: linear-gradient(to top right, #f8d7a4, #bd5e1b); /* Gradient background */
+  background: #bd5e1b; 
   color: #CCCCCC; /* Light grey for text contrast */
   padding: 20px;
   margin: 30px auto; /* Centers the section and adds margin at the top and bottom */
