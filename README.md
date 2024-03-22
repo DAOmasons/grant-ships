@@ -21,17 +21,18 @@ Before cloning the repository, ensure you have the following installed:
 
 To clone the repository and set up a local copy, follow these steps:
 
+> Clone the repository
 ```bash
-# Clone the repository
 git clone https://github.com/DAOmasons/grant-ships.git
 ```
 
+> Go into the repository
 ```bash
-# Go into the repository
 cd grant-ships
 ```
+
+> Install dependencies
 ```bash
-# Install dependencies
 npm install
 ```
 
@@ -39,12 +40,11 @@ npm install
 
 After installing the dependencies, you can run the application locally:
 
+> Start the application
 ```bash
-# Start the application
 npm run dev
-
-# The application should now be running on http://localhost:3000
 ```
+> The application should now be running on http://localhost:3000
 
 ## Contributing
 
