@@ -1,5 +1,4 @@
 // HomePage.jsx
-import React from "react";
 import grantShipsLogo from "../assets/gsLogo.svg";
 import warpcastIcon from "../assets/farcastericon.svg";
 import { FaTwitter, FaTelegram, FaDiscord } from "react-icons/fa";
@@ -39,14 +38,7 @@ function HomePage() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button className="banner-button">App Demo</button>
-        </a>
-        <a
-          href="https://forms.grantships.fun"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button className="banner-button">Sign Up</button>
+          <button className="banner-button">App</button>
         </a>
       </div>
       <hr />
@@ -85,7 +77,16 @@ function HomePage() {
           />
         </a>
       </div>
-      <p>© 2023-Present DAO Masons</p>
+      <p className="footer">
+        © 2023-Present{" "}
+        <a
+          href="https://daomasons.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          DAO Masons
+        </a>
+      </p>
     </>
   );
 }
