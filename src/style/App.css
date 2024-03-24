@@ -1,19 +1,34 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  min-height: 100%;
+body,
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   width: 100%;
-  background: #0D0D0D;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2C2C2C, #0D0D0D);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C2C2C, #0D0D0D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0d0d0d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c2c2c,
+    #0d0d0d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c2c2c,
+    #0d0d0d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url("../assets/starbg.png"); /* Add your image path here */
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+
+  /* overflow: hidden; */
 }
 
 #root {
   max-width: 100%; /* Ensures max-width is 100% for responsiveness */
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0;
   text-align: center;
-  font-family: 'Abril Fatface', serif;
+  font-family: monospace;
   min-height: 100vh; /* Ensures min-height is 100% of viewport height */
   position: relative;
   z-index: 1;
@@ -21,16 +36,22 @@ body, html {
 
 .logo {
   height: auto; /* Adjusts height automatically */
-  max-height: 25em; /* Maximum height */
+  max-height: 20em; /* Maximum height */
   width: 100%; /* Full width */
-  padding: 1em;
-  margin-top: 1em;
   transition: filter 300ms; /* Transition for filter effect */
   filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5)); /* Drop shadow */
 }
 
 .logo-container {
-  margin-top: 50px; /* Space above the logo */
+}
+
+.home-title {
+  font-family: "Share Tech", sans-serif; /* Fallback to sans-serif if Share Tech is not available */
+  font-size: 75px;
+  font-weight: 400;
+  line-height: 56.35px;
+  text-align: center;
+  margin-top: 2em;
 }
 
 .logo:hover {
@@ -45,28 +66,28 @@ body, html {
   flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
-.rulesButton, .signUpButton, .appDemoButton {
-  background-color: #646cff;
+.banner-button {
+  background-color: #181818;
   color: white;
   padding: 10px 20px; /* Increase padding for better text fit */
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   font-size: 1em;
   cursor: pointer;
   transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   min-width: 150px; /* Minimum width for buttons */
   height: 50px; /* Fixed height */
 }
 
-.rulesButton:hover, .signUpButton:hover {
-  background-color: #535bf2;
+.banner-button:hover {
+  background-color: #3c3c3c;
   transform: scale(1.05);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.rulesButton:active, .signUpButton:active {
+.banner-button:active {
   transform: scale(0.95);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -75,16 +96,17 @@ body, html {
   display: flex;
   justify-content: center;
   gap: 40px;
-  margin: 1em 0;
+  margin: 2em;
 }
 
 .social-media-icons a {
   color: inherit;
-  transition: color 0.3s;
+  transition: opacity 0.3s;
+  opacity: 1;
 }
 
 .social-media-icons a:hover {
-  color: #646cff;
+  opacity: 0.2;
 }
 
 h1 {
@@ -92,11 +114,11 @@ h1 {
 }
 
 .byline {
-  color: #bd5e1b;
+  color: #ffffff;
   font-size: 1.5em;
   margin: 0.5em 0;
   font-weight: normal;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .footer {
@@ -120,33 +142,9 @@ h1 {
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 768px) {
-  .logo {
-    max-height: 15em; /* Adjust logo size for smaller screens */
-  }
-
-  .card {
-    justify-content: center; /* Center buttons on smaller screens */
-  }
-
-
-.rulesButton, .signUpButton {
-  width: 100%; /* Full width on small screens */
-  margin-bottom: 10px; /* Space between buttons */
-}
- 
-  .social-media-icons {
-    gap: 20px; /* Smaller gap for icons */
-  }
-
-  #root {
-    padding: 1rem; /* Less padding on smaller screens */
-  }
- }
-
- .about-section {
-  background: #bd5e1b; 
-  color: #CCCCCC; /* Light grey for text contrast */
+.about-section {
+  background: #bd5e1b;
+  color: #cccccc; /* Light grey for text contrast */
   padding: 20px;
   margin: 30px auto; /* Centers the section and adds margin at the top and bottom */
   border-radius: 8px;
@@ -160,5 +158,32 @@ h1 {
   font-size: 16px;
   line-height: 1.6;
   color: black; /* Black color for readability */
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    max-height: 12em; /* Adjust logo size for smaller screens */
+  }
+
+  .home-title {
+    margin-top: 1.5em;
+  }
+  .card {
+    justify-content: center; /* Center buttons on smaller screens */
+  }
+
+  .banner-button {
+    width: 100%; /* Full width on small screens */
+    margin-bottom: 10px; /* Space between buttons */
+  }
+
+  .social-media-icons {
+    gap: 20px; /* Smaller gap for icons */
+    margin: 1em;
+  }
+
+  #root {
+    padding: 1rem; /* Less padding on smaller screens */
+  }
 }
