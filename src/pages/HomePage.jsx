@@ -1,4 +1,3 @@
-// HomePage.jsx
 import React from "react";
 import grantShipsLogo from "../assets/gsLogo.svg";
 import warpcastIcon from "../assets/farcastericon.svg";
@@ -53,7 +52,7 @@ function HomePage() {
       {/* About Grant Ships Section */}
       <div className="about-section">
         <p>
-          Grant Ships is a novel new approach to decide where funding goes in
+          Grant Ships is a novel approach to decide where funding goes in
           your Web3 community. Everyone gets to play a part, making choices
           together to support great projects. It's all about teamwork, clear
           choices, and making a big impact.
@@ -112,7 +111,7 @@ function HomePage() {
         </a>
       </div>
       <hr />
-      {/* Grant Ships Stack Section */}
+      {/* 
       <Container className="protocol-section">
         <Typography variant="h4" gutterBottom>
           Grant Ships is Powered By:
@@ -163,7 +162,8 @@ function HomePage() {
         </Grid>
       </Container>
       <hr />
-      {/* Testimonials Section */}
+      */}
+      {/* 
       <Container className="testimonials-section">
         <Typography variant="h4" gutterBottom>
           What People Are Saying
@@ -201,6 +201,7 @@ function HomePage() {
           </Grid>
         </Grid>
       </Container>
+      */}
 
       <p className="footer">
         © 2023-Present{" "}
