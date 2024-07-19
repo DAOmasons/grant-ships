@@ -75,6 +75,7 @@ function HomePage() {
           <button className="banner-button">App</button>
         </a>
       </div>
+      <hr />
       {/* Social Media Icons */}
       <div className="social-media-icons">
         <a
@@ -110,7 +111,6 @@ function HomePage() {
           />
         </a>
       </div>
-      <hr />
       {/* 
       <Container className="protocol-section">
         <Typography variant="h4" gutterBottom>
