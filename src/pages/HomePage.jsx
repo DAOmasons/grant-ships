@@ -49,6 +49,16 @@ function HomePage() {
       </div>
       
       <p className="byline">A Meta-Framework for Pluralistic Grant Giving</p>
+
+      {/* About Grant Ships Section */}
+      <div className="about-section">
+        <p>
+          Grant Ships is a novel new approach to decide where funding goes in
+          your Web3 community. Everyone gets to play a part, making choices
+          together to support great projects. It's all about teamwork, clear
+          choices, and making a big impact.
+        </p>
+      </div>
       
       <div className="card-container">
         <a
