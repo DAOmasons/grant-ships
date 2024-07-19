@@ -1,3 +1,7 @@
+/* App.css */
+
+/* Existing styles ... */
+
 body,
 html {
   display: flex;
@@ -143,8 +147,8 @@ h1 {
 }
 
 .about-section {
-  background: #bd5e1b;
-  color: #cccccc; /* Light grey for text contrast */
+  background: #f0f0f0; /* Light grey background */
+  color: #333333; /* Dark grey for text contrast */
   padding: 20px;
   margin: 30px auto; /* Centers the section and adds margin at the top and bottom */
   border-radius: 8px;
@@ -157,7 +161,7 @@ h1 {
 .about-section p {
   font-size: 16px;
   line-height: 1.6;
-  color: black; /* Black color for readability */
+  color: #333333; /* Dark grey for readability */
   font-family: "Roboto", sans-serif;
 }
 
@@ -222,8 +226,6 @@ h1 {
   padding: 0 3rem; /* Increased padding for better spacing */
   font-size: 1.2rem; /* Increased font size for better readability */
 }
-
-/* More existing styles ... */
 
 .card-container {
   display: flex;
