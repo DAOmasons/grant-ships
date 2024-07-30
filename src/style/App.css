@@ -84,6 +84,10 @@ html {
   height: 50px; /* Fixed height */
 }
 
+.banner-button.app-button {
+  background-color: rgb(0, 30, 42);
+}
+
 .banner-button:hover {
   background-color: #3c3c3c;
   transform: scale(1.05);
@@ -93,6 +97,12 @@ html {
 .banner-button:active {
   transform: scale(0.95);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.banner-button.app-button:hover {
+  background-color: rgb(0, 32, 44);
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .social-media-icons {
@@ -235,7 +245,8 @@ h1 {
 }
 
 /* Commented out sections for protocols and testimonials */
-.protocol-section, .testimonials-section {
+.protocol-section,
+.testimonials-section {
   margin-top: 2em;
   margin-bottom: 2em;
 }

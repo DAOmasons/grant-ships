@@ -13,12 +13,13 @@ import { TbRocketOff } from "react-icons/tb";
 import "../style/App.css";
 
 const announcements = [
-  "Community Voting for Round 1 is Underway!",
-  "We are holding an X Space July 26th",
-  "Round 2 Grants begins July 29th",
+  "Community Voting for Round 1 is Complete!",
   <span>
-    <TbRocketOff style={{ marginRight: '0.5rem' }} /> Jade Shadow's Ship Has Crashed <TbRocketOff style={{ marginRight: '0.5rem' }} />
-  </span>
+    <TbRocketOff style={{ marginRight: "0.5rem" }} /> Jade Shadow's Ship Has
+    Crashed and Burned! <TbRocketOff style={{ marginRight: "0.5rem" }} />
+  </span>,
+  "Round 2: Gaming on Arbitrum Grants Begins Aug 1",
+  "Pilot retrospective linked below!",
 ];
 
 const Ticker = ({ messages }) => {
@@ -41,24 +42,24 @@ function HomePage() {
   return (
     <>
       <Ticker messages={announcements} />
-      
+
       <h1 className="home-title">Grant Ships</h1>
       <div className="logo-container">
         <img src={grantShipsLogo} className="logo" alt="Grant Ships logo" />
       </div>
-      
+
       <p className="byline">A Meta-Framework for Pluralistic Grant Giving</p>
 
       {/* About Grant Ships Section */}
       <div className="about-section">
         <p>
-          Grant Ships is a novel approach to decide where funding goes in
-          your Web3 community. Everyone gets to play a part, making choices
-          together to support great projects. It's all about teamwork, clear
-          choices, and making a big impact.
+          Grant Ships is a novel approach to decide where funding goes in your
+          Web3 community. Everyone gets to play a part, making choices together
+          to support great projects. It's all about teamwork, clear choices, and
+          making a big impact.
         </p>
       </div>
-      
+
       <div className="card-container">
         <a
           href="https://rules.grantships.fun"
@@ -67,12 +68,21 @@ function HomePage() {
         >
           <button className="banner-button">Game Rules</button>
         </a>
+
+        <a
+          href="src/assets/pilotretro.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="banner-button">Pilot Report</button>
+        </a>
+
         <a
           href="https://app.grantships.fun"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button className="banner-button">App</button>
+          <button className="banner-button app-button">App</button>
         </a>
       </div>
       <hr />
