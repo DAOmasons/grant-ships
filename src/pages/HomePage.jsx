@@ -69,11 +69,7 @@ function HomePage() {
           <button className="banner-button">Game Rules</button>
         </a>
 
-        <a
-          href="src/assets/pilotretro.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="/pilotretro.pdf" target="_blank" rel="noopener noreferrer">
           <button className="banner-button">Pilot Report</button>
         </a>
 
