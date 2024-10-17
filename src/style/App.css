@@ -38,27 +38,25 @@ html {
 }
 
 .logo {
-  height: auto; /* Adjusts height automatically */
+  height: 200px; /* Adjusts height automatically */
   max-height: 20em; /* Maximum height */
   width: 100%; /* Full width */
   transition: filter 300ms; /* Transition for filter effect */
   filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5)); /* Drop shadow */
-}
-
-.logo-container {
-}
-
-.home-title {
-  font-family: "Share Tech", sans-serif; /* Fallback to sans-serif if Share Tech is not available */
-  font-size: 75px;
-  font-weight: 400;
-  line-height: 56.35px;
-  text-align: center;
-  margin-top: 2em;
+  margin-bottom: 0.5em;
 }
 
 .logo:hover {
   filter: drop-shadow(0 0 10em #646cffaa); /* Drop shadow on hover */
+}
+
+.home-title {
+  font-family: "Share Tech", sans-serif; /* Fallback to sans-serif if Share Tech is not available */
+  font-size: 6em;
+  line-height: 56.35px;
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .card {
@@ -75,7 +73,7 @@ html {
   padding: 10px 20px; /* Increase padding for better text fit */
   border: none;
   border-radius: 3px;
-  font-size: 1em;
+  font-size: 1.2em;
   cursor: pointer;
   transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -128,8 +126,8 @@ h1 {
 
 .byline {
   color: #ffffff;
-  font-size: 1.5em;
-  margin: 0.5em 0;
+  font-size: 2em;
+  margin: 1em 1em;
   font-weight: normal;
   font-family: "Roboto", sans-serif;
 }
@@ -157,8 +155,10 @@ h1 {
 
 .about-section {
   background: transparent; /* Transparent background */
+  font-size: 1.8em;
+  line-height: 1em;
   color: #ffffff; /* White font color */
-  padding: 20px;
+  padding: 10px;
   margin: 30px auto; /* Centers the section and adds margin at the top and bottom */
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
@@ -167,21 +167,15 @@ h1 {
   width: 100%; /* Ensures the section is responsive */
 }
 
-.about-section p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #ffffff; /* White font color */
-  font-family: "Roboto", sans-serif;
-}
-
 @media only screen and (max-width: 768px) {
+  .home-title {
+    font-size: 4em;
+  }
+
   .logo {
     max-height: 12em; /* Adjust logo size for smaller screens */
   }
 
-  .home-title {
-    margin-top: 1.5em;
-  }
   .card {
     justify-content: center; /* Center buttons on smaller screens */
   }
@@ -218,7 +212,7 @@ h1 {
 
 .ticker {
   display: inline-block;
-  animation: ticker 20s linear infinite; /* Slowed down the ticker speed */
+  animation: ticker 15s linear infinite; /* Slowed down the ticker speed */
 }
 
 @keyframes ticker {

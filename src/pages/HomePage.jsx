@@ -13,12 +13,8 @@ import { TbRocketOff } from "react-icons/tb";
 import "../style/App.css";
 
 const announcements = [
-  "Community Voting for Round 1 is Complete!",
-  <span>
-    <TbRocketOff style={{ marginRight: "0.5rem" }} /> Jade Shadow's Ship Has
-    Crashed and Burned! <TbRocketOff style={{ marginRight: "0.5rem" }} />
-  </span>,
-  "Round 2: Gaming on Arbitrum Grants Begins Aug 1",
+  "Round 2 is complete! 90K ARB distributed.",
+  "Community vote opening soon, stay tuned.",
   "Pilot retrospective linked below!",
 ];
 
@@ -43,22 +39,26 @@ function HomePage() {
     <>
       <Ticker messages={announcements} />
 
-      <h1 className="home-title">Grant Ships</h1>
+      <p className="home-title">Grant Ships</p>
+      <p className="byline">The Competitive Grants Platform</p>
       <div className="logo-container">
         <img src={grantShipsLogo} className="logo" alt="Grant Ships logo" />
       </div>
 
-      <p className="byline">A Meta-Framework for Pluralistic Grant Giving</p>
-
       {/* About Grant Ships Section */}
-      <div className="about-section">
-        <p>
-          Grant Ships is a novel approach to decide where funding goes in your
-          Web3 community. Everyone gets to play a part, making choices together
-          to support great projects. It's all about teamwork, clear choices, and
-          making a big impact.
-        </p>
-      </div>
+      <p className="about-section">
+        <strong>HOW IT WORKS:</strong> <br />
+        <br />
+        <strong>1.</strong> Fund your Grant Ships and watch them compete.
+        <br />
+        <br />
+        <strong>2.</strong>A community vote decides which Ships get more (or
+        less) funding in the next round.
+        <br />
+        <br />
+        <strong>3.</strong>Repeat! Watch your Ships evolve the ideal grants
+        program for your DAO!
+      </p>
 
       <div className="card-container">
         <a
