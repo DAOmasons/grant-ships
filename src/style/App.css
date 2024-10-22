@@ -124,6 +124,45 @@ h1 {
   color: whitesmoke;
 }
 
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateY(-15px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(0);
+  }
+
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(11);
+  }
+  100% {
+    transform: scale(1);
+    color: orangered;
+  }
+}
+
+@keyframes glow {
+}
+
+.shake-icon {
+  animation: shake 2.8s ease-in-out; /* duration of the animation */
+  animation-timing-function: ease-in-out;
+}
+
 .byline {
   color: #ffffff;
   font-size: 2em;

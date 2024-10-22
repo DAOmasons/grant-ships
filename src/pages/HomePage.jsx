@@ -95,6 +95,7 @@ function HomePage() {
           href="https://t.me/grantships"
           target="_blank"
           rel="noopener noreferrer"
+          className="shake-icon"
         >
           <FaTelegram size={30} />
         </a>
