@@ -52,11 +52,10 @@ function HomePage() {
         <strong>1.</strong> Fund your Grant Ships and watch them compete.
         <br />
         <br />
-        <strong>2.</strong> Vote to signal which Ships get more funding.
+        <strong>2.</strong> DAO vote to signal which Ships get more funding.
         <br />
         <br />
-        <strong>3.</strong> Repeat and watch your Ships evolve! program for your
-        DAO!
+        <strong>3.</strong> Repeat and watch your Ships evolve!
       </p>
 
       <div className="card-container">
