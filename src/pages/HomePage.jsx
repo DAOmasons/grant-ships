@@ -1,21 +1,21 @@
-import React from "react";
-import grantShipsLogo from "../assets/gsLogo.svg";
-import warpcastIcon from "../assets/farcastericon.svg";
-import { FaTwitter, FaTelegram, FaDiscord } from "react-icons/fa";
-import { Typography, Grid, Container } from "@mui/material";
-import alloLogo from "../assets/allowht.png";
-import envioLogo from "../assets/enviowht.png";
-import hatsLogo from "../assets/hatswht.png";
-import ipfsLogo from "../assets/ipfswht.png";
-import pinataLogo from "../assets/pinatawht.png";
-import graphLogo from "../assets/thegraphwht.png";
-import { TbRocketOff } from "react-icons/tb";
-import "../style/App.css";
+import React from 'react';
+import grantShipsLogo from '../assets/gsLogo.svg';
+import warpcastIcon from '../assets/farcastericon.svg';
+import { FaTwitter, FaTelegram, FaDiscord } from 'react-icons/fa';
+import { Typography, Grid, Container } from '@mui/material';
+import alloLogo from '../assets/allowht.png';
+import envioLogo from '../assets/enviowht.png';
+import hatsLogo from '../assets/hatswht.png';
+import ipfsLogo from '../assets/ipfswht.png';
+import pinataLogo from '../assets/pinatawht.png';
+import graphLogo from '../assets/thegraphwht.png';
+import { TbRocketOff } from 'react-icons/tb';
+import '../style/App.css';
 
 const announcements = [
-  "Round 2 is complete! 90K ARB distributed.",
-  "Community vote opening soon, stay tuned.",
-  "Pilot retrospective linked below!",
+  'Grant Ships chosen as meta-governance layer for Gitcoin Grants 23',
+  'GG23 Applications are open',
+  'Pilot Round retrospective is live - find link below',
 ];
 
 const Ticker = ({ messages }) => {
@@ -76,7 +76,14 @@ function HomePage() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button className="banner-button app-button">App</button>
+          <button className="banner-button">Pilot App</button>
+        </a>
+        <a
+          href="https://gg23.grantships.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="banner-button app-button">GG23</button>
         </a>
       </div>
       <hr />
@@ -209,7 +216,7 @@ function HomePage() {
       */}
 
       <p className="footer">
-        © 2023-Present{" "}
+        © 2023-Present{' '}
         <a
           href="https://daomasons.com/"
           target="_blank"

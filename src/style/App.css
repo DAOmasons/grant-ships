@@ -20,7 +20,7 @@ html {
     #2c2c2c,
     #0d0d0d
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-image: url("../assets/starbg3.png"); /* Add your image path here */
+  background-image: url('../assets/starbg3.png'); /* Add your image path here */
   background-size: cover;
   background-position: center;
   background-repeat: repeat-y;
@@ -51,7 +51,7 @@ html {
 }
 
 .home-title {
-  font-family: "Share Tech", sans-serif; /* Fallback to sans-serif if Share Tech is not available */
+  font-family: 'Share Tech', sans-serif; /* Fallback to sans-serif if Share Tech is not available */
   font-size: 6em;
   line-height: 56.35px;
   text-align: center;
@@ -77,7 +77,7 @@ html {
   cursor: pointer;
   transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   min-width: 150px; /* Minimum width for buttons */
   height: 50px; /* Fixed height */
 }
@@ -147,7 +147,7 @@ h1 {
     transform: scale(1) rotate(0deg);
   }
   50% {
-    transform: scale(11);
+    transform: scale(1.5);
   }
   100% {
     transform: scale(1);
@@ -168,7 +168,7 @@ h1 {
   font-size: 2em;
   margin: 1em 1em;
   font-weight: normal;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .footer {
